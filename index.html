@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RonnaScanner - Lead Generation Tools</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0f172a;
+            color: #fff;
+            min-height: 100vh;
+        }
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+        }
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        h1 span { color: #60a5fa; }
+        .tagline {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            margin-bottom: 3rem;
+            max-width: 600px;
+        }
+        .search-box {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 4rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .search-box input {
+            padding: 1rem 1.5rem;
+            border-radius: 50px;
+            border: 1px solid #334155;
+            background: #1e293b;
+            color: #fff;
+            font-size: 1rem;
+            width: 300px;
+        }
+        .search-box button {
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            border: none;
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .search-box button:hover { transform: scale(1.05); }
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            max-width: 1000px;
+            padding: 0 2rem;
+        }
+        .tool-card {
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 16px;
+            padding: 2rem;
+            transition: all 0.3s;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+        }
+        .tool-card:hover {
+            border-color: #3b82f6;
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(59, 130, 246, 0.15);
+        }
+        .tool-icon { font-size: 2rem; margin-bottom: 1rem; }
+        .tool-card h3 { font-size: 1.2rem; margin-bottom: 0.5rem; color: #e2e8f0; }
+        .tool-card p { color: #94a3b8; font-size: 0.9rem; line-height: 1.6; }
+        .badge {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        .badge-beta { background: rgba(139, 92, 246, 0.2); color: #a78bfa; }
+        .badge-new { background: rgba(34, 197, 94, 0.2); color: #22c55e; }
+        footer {
+            text-align: center;
+            padding: 3rem;
+            color: #475569;
+        }
+        footer a { color: #3b82f6; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h1>Ronna<span>Scanner</span></h1>
+        <p class="tagline">Powerful lead generation and prospecting tools to help you find and connect with your ideal customers.</p>
+        
+        <div class="search-box">
+            <input type="text" placeholder="Enter a company name...">
+            <button>Find Leads</button>
+        </div>
+        
+        <div class="tools-grid">
+            <div class="tool-card">
+                <div class="tool-icon">&#128269;</div>
+                <h3>Lead Scanner</h3>
+                <p>Find business leads with verified contact information and company details.</p>
+                <span class="badge badge-beta">Beta</span>
+            </div>
+            
+            <div class="tool-card">
+                <div class="tool-icon">&#128101;</div>
+                <h3>Contact Finder</h3>
+                <p>Discover direct email addresses and phone numbers for any professional.</p>
+                <span class="badge badge-beta">Beta</span>
+            </div>
+            
+            <div class="tool-card">
+                <div class="tool-icon">&#128200;</div>
+                <h3>Prospect Research</h3>
+                <p>Get detailed insights on prospects including social profiles and company history.</p>
+                <span class="badge badge-new">New</span>
+            </div>
+            
+            <div class="tool-card">
+                <div class="tool-icon">&#9993;</div>
+                <h3>Email Finder & Verifier</h3>
+                <p>Find and validate email addresses to ensure your messages reach the inbox.</p>
+                <span class="badge badge-beta">Beta</span>
+            </div>
+            
+            <div class="tool-card">
+                <div class="tool-icon">&#127970;</div>
+                <h3>Company Database</h3>
+                <p>Access comprehensive data on millions of companies worldwide.</p>
+                <span class="badge badge-beta">Beta</span>
+            </div>
+            
+            <div class="tool-card">
+                <div class="tool-icon">&#128202;</div>
+                <h3>Lead Enrichment</h3>
+                <p>Enrich your existing leads with additional data points and insights.</p>
+                <span class="badge badge-new">New</span>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>A <a href="https://latarence.com">Lamar</a> Platform</p>
+    </footer>
+</body>
+</html>
