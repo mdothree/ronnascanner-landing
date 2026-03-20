@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "cleanUrls": true,
+  "redirects": [
+    {"source": "/leads", "destination": "https://ronnascanner-leads.vercel.app", "permanent": true},
+    {"source": "/contacts", "destination": "https://ronnascanner-contacts.vercel.app", "permanent": true},
+    {"source": "/emails", "destination": "https://ronnascanner-emails.vercel.app", "permanent": true},
+    {"source": "/companies", "destination": "https://ronnascanner-companies.vercel.app", "permanent": true},
+    {"source": "/prospects", "destination": "https://ronnascanner-prospects.vercel.app", "permanent": true}
+  ]
+}
