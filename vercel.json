@@ -2,10 +2,10 @@
   "version": 2,
   "cleanUrls": true,
   "redirects": [
-    {"source": "/leads", "destination": "https://ronnascanner-leads.vercel.app", "permanent": true},
-    {"source": "/contacts", "destination": "https://ronnascanner-contacts.vercel.app", "permanent": true},
-    {"source": "/emails", "destination": "https://ronnascanner-emails.vercel.app", "permanent": true},
-    {"source": "/companies", "destination": "https://ronnascanner-companies.vercel.app", "permanent": true},
-    {"source": "/prospects", "destination": "https://ronnascanner-prospects.vercel.app", "permanent": true}
+    {"source": "/leads", "destination": "https://leads.ronnascanner.com", "permanent": true},
+    {"source": "/contacts", "destination": "https://contacts.ronnascanner.com", "permanent": true},
+    {"source": "/emails", "destination": "https://emails.ronnascanner.com", "permanent": true},
+    {"source": "/companies", "destination": "https://companies.ronnascanner.com", "permanent": true},
+    {"source": "/prospects", "destination": "https://prospects.ronnascanner.com", "permanent": true}
   ]
 }
