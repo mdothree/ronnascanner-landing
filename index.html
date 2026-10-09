@@ -163,6 +163,20 @@
         }
         
         .nav-links a:hover { color: var(--text); }
+
+        .nav-toggle {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            background: transparent;
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 10px;
+            color: var(--text);
+            font-size: 1.25rem;
+            cursor: pointer;
+        }
         
         .btn {
             display: inline-flex;
@@ -352,7 +366,7 @@
         
         .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
             gap: 1.5rem;
         }
         
@@ -540,8 +554,39 @@
                 display: none;
             }
 
+            .nav-toggle {
+                display: inline-flex;
+            }
+
             .nav-links {
                 display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0.25rem;
+                padding: 0.75rem 1rem 1rem;
+                background: rgba(15, 23, 42, 0.97);
+                border-bottom: 1px solid rgba(255,255,255,0.08);
+            }
+
+            nav.nav-open .nav-links {
+                display: flex;
+            }
+
+            .nav-links a {
+                padding: 0.75rem 0.5rem;
+                font-size: 1rem;
+            }
+
+            .nav-links .btn {
+                justify-content: center;
+            }
+
+            .features {
+                padding: 4rem 1rem;
             }
 
             .hero-stats {
@@ -571,7 +616,8 @@
                 <div class="logo-icon">R</div>
                 <span>Ronna</span>
             </div>
-            <div class="nav-links">
+            <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
+            <div class="nav-links" id="nav-links">
                 <a href="#tools">Tools</a>
                 <a href="#how">How It Works</a>
                 <a href="#pricing">Pricing</a>
@@ -747,5 +793,23 @@
             <a href="#">Terms</a>
         </p>
     </footer>
+    <script>
+    (function () {
+        var nav = document.querySelector('nav');
+        var btn = nav && nav.querySelector('.nav-toggle');
+        if (!btn) return;
+        function setOpen(open) {
+            nav.classList.toggle('nav-open', open);
+            btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+            btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+            btn.innerHTML = open ? '&times;' : '&#9776;';
+        }
+        btn.addEventListener('click', function () { setOpen(!nav.classList.contains('nav-open')); });
+        nav.querySelectorAll('.nav-links a').forEach(function (a) {
+            a.addEventListener('click', function () { setOpen(false); });
+        });
+        document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setOpen(false); });
+    })();
+    </script>
 </body>
 </html>
