@@ -2,6 +2,7 @@
   "version": 2,
   "cleanUrls": true,
   "redirects": [
+    {"source": "/manifest.json", "destination": "/site.webmanifest", "permanent": false},
     {"source": "/leads", "destination": "https://leads.ronnascanner.com", "permanent": true},
     {"source": "/contacts", "destination": "https://contacts.ronnascanner.com", "permanent": true},
     {"source": "/emails", "destination": "https://emails.ronnascanner.com", "permanent": true},
