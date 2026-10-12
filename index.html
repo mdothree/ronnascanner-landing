@@ -628,7 +628,7 @@
                 <a href="#how">How It Works</a>
                 <a href="#pricing">Pricing</a>
                 <a href="https://latarence.com" class="btn btn-outline">Sign In</a>
-                <a href="#" class="btn btn-primary">Get Started</a>
+                <a href="https://leads.ronnascanner.com/" class="btn btn-primary">Get Started</a>
             </div>
         </div>
     </nav>
@@ -636,18 +636,18 @@
     <main id="main-content">
     <section class="hero">
         <div class="hero-badge">
-            Now with AI-powered enrichment
+            Five prospecting tools, one account
         </div>
         <h1>
             Find Your Next<br>
             <span class="gradient">Big Opportunity</span>
         </h1>
         <p>
-            Build pipeline faster with verified B2B leads, accurate contact data, and deep prospect insights. Trusted by sales teams everywhere.
+            Build pipeline faster: find B2B leads, look up contacts and company details, check emails before you send, and research prospects, all in one place.
         </p>
         
-        <form class="search-hero" onsubmit="event.preventDefault(); window.location.href='/leads';">
-            <input type="text" placeholder="Enter a company name or industry...">
+        <form class="search-hero" id="hero-search" action="https://leads.ronnascanner.com/" method="get">
+            <input type="text" name="q" aria-label="Company name or industry" placeholder="Enter a company name or industry...">
             <button type="submit" class="btn btn-primary">
                 Find Leads
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -658,16 +658,16 @@
         
         <div class="hero-stats">
             <div class="stat">
-                <div class="stat-value">50M+</div>
-                <div class="stat-label">Company Records</div>
+                <div class="stat-value">5</div>
+                <div class="stat-label">Prospecting Tools</div>
             </div>
             <div class="stat">
-                <div class="stat-value">500M+</div>
-                <div class="stat-label">Contact Profiles</div>
+                <div class="stat-value">1</div>
+                <div class="stat-label">Account for Every Tool</div>
             </div>
             <div class="stat">
-                <div class="stat-value">95%</div>
-                <div class="stat-label">Email Accuracy</div>
+                <div class="stat-value">CSV</div>
+                <div class="stat-label">Export Your Results</div>
             </div>
         </div>
     </section>
@@ -682,7 +682,7 @@
             <a href="https://leads.ronnascanner.com/" class="feature-card">
                 <div class="feature-icon">🔍</div>
                 <h3>Lead Scanner</h3>
-                <p>Find decision-makers at any company with verified emails, phones, and social profiles. Build targeted lead lists in minutes.</p>
+                <p>Find decision-makers by company, industry, and location, and build targeted lead lists you can save and export.</p>
                 <div class="feature-link">
                     Try Lead Scanner
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -694,7 +694,7 @@
             <a href="https://contacts.ronnascanner.com/" class="feature-card">
                 <div class="feature-icon">👤</div>
                 <h3>Contact Finder</h3>
-                <p>Instantly find direct dials and work emails for any professional. Never cold-call a gatekeeper again.</p>
+                <p>Look up the people at a company by department and seniority, with the contact details available for each.</p>
                 <div class="feature-link">
                     Find Contacts
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -718,7 +718,7 @@
             <a href="https://companies.ronnascanner.com/" class="feature-card">
                 <div class="feature-icon">🏢</div>
                 <h3>Company Database</h3>
-                <p>Explore 50M+ companies with funding data, tech stacks, employee counts, and org charts.</p>
+                <p>Look up companies by name or domain: industry, size, location, and the details that matter for outreach.</p>
                 <div class="feature-link">
                     Browse Companies
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -739,17 +739,12 @@
                 </div>
             </a>
             
-            <a href="#" class="feature-card">
+            <div class="feature-card">
                 <div class="feature-icon">🚀</div>
                 <h3>Coming Soon: Enrichment API</h3>
-                <p>Bulk enrich your CRM data with our powerful API. Integrate into any workflow seamlessly.</p>
-                <div class="feature-link">
-                    Join Waitlist
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
-                    </svg>
-                </div>
-            </a>
+                <p>Bulk enrichment for your CRM data through an API. In development; not available yet.</p>
+                <div class="feature-link">Coming soon</div>
+            </div>
         </div>
     </section>
     
@@ -764,19 +759,19 @@
                 <div class="step">
                     <div class="step-number">1</div>
                     <h3>Search & Discover</h3>
-                    <p>Enter a company, industry, or job title. Our database spans 50M+ companies and 500M+ contacts.</p>
+                    <p>Enter a company, industry, or job title, and pick the tool that fits: leads, contacts, emails, companies, or prospects.</p>
                 </div>
                 
                 <div class="step">
                     <div class="step-number">2</div>
                     <h3>Verify & Enrich</h3>
-                    <p>Get only verified data. Every email, phone, and social link is checked for accuracy.</p>
+                    <p>Check email addresses for deliverability before you reach out, and review each result before you use it.</p>
                 </div>
                 
                 <div class="step">
                     <div class="step-number">3</div>
                     <h3>Export & Outreach</h3>
-                    <p>Download to CSV or push directly to your CRM. Start selling faster with warm prospects.</p>
+                    <p>Download your results to CSV and bring them into your CRM or outreach workflow.</p>
                 </div>
             </div>
         </div>
@@ -785,10 +780,10 @@
     <section class="cta" id="pricing">
         <div class="cta-box">
             <h2>Ready to Fill Your Pipeline?</h2>
-            <p>Start with 50 credits and scale as you grow.</p>
+            <p>Pick a tool and run your first search. Paid plans are not open yet; pricing will be posted here before checkout opens.</p>
             <div class="cta-buttons">
-                <a href="#" class="btn btn-primary">Get Started</a>
-                <a href="#" class="btn btn-outline">View Pricing</a>
+                <a href="https://leads.ronnascanner.com/" class="btn btn-primary">Get Started</a>
+                <a href="#tools" class="btn btn-outline">See the Tools</a>
             </div>
         </div>
     </section>
@@ -801,23 +796,6 @@
             <a href="#">Terms</a>
         </p>
     </footer>
-    <script>
-    (function () {
-        var nav = document.querySelector('nav');
-        var btn = nav && nav.querySelector('.nav-toggle');
-        if (!btn) return;
-        function setOpen(open) {
-            nav.classList.toggle('nav-open', open);
-            btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-            btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-            btn.innerHTML = open ? '&times;' : '&#9776;';
-        }
-        btn.addEventListener('click', function () { setOpen(!nav.classList.contains('nav-open')); });
-        nav.querySelectorAll('.nav-links a').forEach(function (a) {
-            a.addEventListener('click', function () { setOpen(false); });
-        });
-        document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setOpen(false); });
-    })();
-    </script>
+    <script src="/js/site.js" defer></script>
 </body>
 </html>
