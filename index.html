@@ -507,6 +507,15 @@
             margin-bottom: 2rem;
         }
         
+        .cta-box p.cta-choose {
+            font-size: 0.95rem;
+            margin: 1.5rem 0 0;
+        }
+
+        .cta-choose a {
+            color: #A5B4FC;
+        }
+
         .cta-buttons {
             display: flex;
             gap: 1rem;
@@ -605,7 +614,7 @@
         }
         /* A11Y-013: 44px minimum tap targets on touch widths (layout-neutral hit area for the inline footer links) */
         @media (max-width: 768px) {
-            footer p a { display: inline-block; padding: 14px 4px; margin: -14px -4px; }
+            footer p a, .cta-choose a { display: inline-block; padding: 14px 4px; margin: -14px -4px; }
         }
             /* A11Y-003: #6366F1 was 3.3:1 on the #1E293B cards and 4.0:1 on the #0F172A footer; indigo-300 is 7.6:1+. */
         .feature-link, footer a { color: #A5B4FC; }
@@ -629,9 +638,9 @@
             <div class="nav-links" id="nav-links">
                 <a href="#tools">Tools</a>
                 <a href="#how">How It Works</a>
-                <a href="#pricing">Pricing</a>
+                <a href="#waitlist">Waitlist</a>
                 <a href="https://leads.ronnascanner.com/#signin" class="btn btn-outline">Sign In</a>
-                <a href="https://leads.ronnascanner.com/" class="btn btn-primary">Get Started</a>
+                <a href="#tools" class="btn btn-primary">Get Started</a>
             </div>
         </div>
     </nav>
@@ -780,14 +789,21 @@
         </div>
     </section>
     
-    <section class="cta" id="pricing">
+    <section class="cta" id="waitlist">
         <div class="cta-box">
             <h2>Ready to Fill Your Pipeline?</h2>
-            <p>Pick a tool and run your first search. Paid plans are not open yet; pricing will be posted here before checkout opens.</p>
+            <p>RonnaScanner is not open yet. Join the waitlist and we will write to you when it opens. Paid plans are not open either; pricing will be posted here before checkout opens.</p>
             <div class="cta-buttons">
-                <a href="https://leads.ronnascanner.com/" class="btn btn-primary">Get Started</a>
+                <a href="https://leads.ronnascanner.com/#waitlist" class="btn btn-primary">Join the Waitlist</a>
                 <a href="#tools" class="btn btn-outline">See the Tools</a>
             </div>
+            <p class="cta-choose">Or join the waitlist for one tool:
+                <a href="https://leads.ronnascanner.com/#waitlist">Lead Scanner</a> ·
+                <a href="https://contacts.ronnascanner.com/#waitlist">Contacts</a> ·
+                <a href="https://emails.ronnascanner.com/#waitlist">Emails</a> ·
+                <a href="https://companies.ronnascanner.com/#waitlist">Companies</a> ·
+                <a href="https://prospects.ronnascanner.com/#waitlist">Prospects</a>
+            </p>
         </div>
     </section>
     </main>

@@ -1,6 +1,12 @@
 {
   "version": 2,
   "cleanUrls": true,
+  "git": {
+    "deploymentEnabled": {
+      "**": false,
+      "main": true
+    }
+  },
   "redirects": [
     {
       "source": "/terms",
