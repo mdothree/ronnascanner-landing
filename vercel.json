@@ -47,6 +47,16 @@
       "source": "/prospects",
       "destination": "https://prospects.ronnascanner.com",
       "permanent": true
+    },
+    {
+      "source": "/refund-policy",
+      "destination": "https://mdo3d.com/refund",
+      "permanent": false
+    },
+    {
+      "source": "/pricing",
+      "destination": "/#waitlist",
+      "permanent": false
     }
   ],
   "headers": [
