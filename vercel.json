@@ -62,6 +62,16 @@
       "source": "/contact",
       "destination": "https://mdo3d.com/contact",
       "permanent": false
+    },
+    {
+      "source": "/refund",
+      "destination": "https://mdo3d.com/refund",
+      "permanent": false
+    },
+    {
+      "source": "/refunds",
+      "destination": "https://mdo3d.com/refund",
+      "permanent": false
     }
   ],
   "headers": [
